@@ -1,0 +1,38 @@
+{
+  "card1":{
+    "question":{
+      "title":"Вопрос1",
+      "text":"Синтаксис для вставки кодировки",
+      "code":"<meta charset='имя кодировки'> ASDLFSDDKFLSLFDKS:ALFKAS D:LKFD L:SAKDF: LK"
+    },
+    "answer":{
+      "title":"Ответ",
+      "text":"Используется следующий синтаксис",
+      "code":"<meta charset='имя кодировки'>"
+    }
+  },
+  "card2":{
+    "question":{
+      "title":"Вопрос2",
+      "text":"Синтаксис для вставки кодировки",
+      "code":"<meta charset='имя кодировки'> ASDLFSDDKFLSLFDKS:ALFKAS D:LKFD L:SAKDF: LK"
+    },
+    "answer":{
+      "title":"Ответ",
+      "text":"Используется следующий синтаксис",
+      "code":"<meta charset='имя кодировки'>"
+    }
+  },
+  "card3":{
+    "question":{
+      "title":"Вопрос3",
+      "text":"Синтаксис для вставки кодировки",
+      "code":"<meta charset='имя кодировки'> ASDLFSDDKFLSLFDKS:ALFKAS D:LKFD L:SAKDF: LK"
+    },
+    "answer":{
+      "title":"Ответ",
+      "text":"Используется следующий синтаксис",
+      "code":"<meta charset='имя кодировки'>"
+    }
+  }
+}

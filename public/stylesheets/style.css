@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:700i');
+
+html{
+	font-size: 24px;
+	font-family: 'Roboto', Tahoma, "Times New Roman", sans-serif;
+}
+
+body{
+	margin:0;
+	padding:0;
+}
+
+.page-header{
+	margin: 10px auto;
+	text-align: center;
+}
+
+.page-header__title{
+	display: inline-block;
+	vertical-align: top;
+	font-family:'Josefin Sans', Tahoma, "Times New Roman", sans-serif;
+	margin:0;
+	font-size: 2.1em;
+}
+
+.page-header__logo{
+	vertical-align: top;
+}
+
+
+.page-header:after{
+	content:'';
+	display: block;
+	clear:both;
+}
+
+.card-list{
+	list-style-type: none;
+	margin:0;
+	padding:0;
+	font-size: 0;
+}
+
+.card{
+	position: relative;
+	display: none;
+	max-width: 1010px;
+	min-width: 280px;
+	min-height: 300px;
+	margin:10px 10px;
+	font-size: 1rem;
+	text-align: left;
+	border-radius: 10px;
+	box-shadow:0 0 10px rgba(0,0,0,.7);
+}
+
+.card__inner{
+	margin:0 5px;
+	padding-bottom: 60px;
+}
+
+.card__face{
+	margin:0;
+	padding: 10px 0;
+}
+
+.card--active{
+	display: block;
+}
+
+.card__back{
+	display: block;
+	margin:0;
+}
+
+.card__control-wrapper{
+	display: block;
+	width: 100%;
+	position: absolute;
+	bottom: 20px;
+}
+
+.card__link{
+	float: right;
+	margin-right: 30px;
+	font-size: 0.7em;
+}
+
+.code{
+	margin:0;
+	padding:10px;
+	background-color: #f8f8f8;
+	font-size: 0.7em;
+	text-align: left;
+	overflow-x: auto;
+	outline:1px solid yellow;
+}
+
+.card__title{
+	font-size: 1em;
+	text-align: center;
+}
+
+@media (max-width:480px){
+	html{
+		font-size: 16px;
+	}
+}
+
+@media (min-width:480px){
+	html{
+		font-size: 16px;
+	}
+
+	.card__inner{
+		margin-left: 30px;
+		margin-right: 30px;
+	}
+}
+
+@media (min-width:480px){
+	html{
+		font-size: 18px;
+	}
+
+	.page-header__title {
+		margin-top: 50px;
+		font-size: 64px;
+	}
+.card__inner{
+		margin-left: 30px;
+		margin-right: 30px;
+	}
+}
+
+@media (min-width:1024px) {
+	.card {
+		margin: 10px auto;
+	}
+
+	.page-header__title {
+		margin-top: 50px;
+		margin-right: 50px;
+	}
+
+}

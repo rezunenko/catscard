@@ -1,0 +1,16 @@
+extends layout
+
+block question
+  if question.title
+    h1.card__title=question.title
+  if question.text
+    p.card__paragraph=question.text
+  if question.code
+    xmp(class="code card__code")=question.code
+block answer
+  if answer.title
+    h1.card__title=answer.title
+  if answer.text
+    p.card__paragraph=answer.text
+  if answer.code
+    xmp(class="code card__code")=answer.code
