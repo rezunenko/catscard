@@ -2,7 +2,6 @@
 @import url('https://fonts.googleapis.com/css?family=Josefin+Sans:700i');
 
 html{
-	font-size: 24px;
 	font-family: 'Roboto', Tahoma, "Times New Roman", sans-serif;
 }
 
@@ -21,11 +20,13 @@ body{
 	vertical-align: top;
 	font-family:'Josefin Sans', Tahoma, "Times New Roman", sans-serif;
 	margin:0;
-	font-size: 2.1em;
+	font-size: 2.1rem;
 }
 
 .page-header__logo{
-	vertical-align: top;
+	display: block;
+	margin: 0 auto;
+	width:200px;
 }
 
 
@@ -72,6 +73,44 @@ body{
 .card__back{
 	display: block;
 	margin:0;
+	text-align: center;
+}
+
+.card__checker:not(:checked) ~ .card__paragraph,
+.card__checker:not(:checked) ~ .card__code,
+.card__checker:not(:checked) ~ .card__title{
+	display: none;
+}
+
+.card__checker{
+	display: none;
+}
+
+.btn{
+	display: inline-block;
+	padding:10px;
+	box-shadow: 0 0 10px rgba(0,0,0,.7);
+	border-radius: 5px;
+
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+}
+
+.btn:hover,
+.btn:focus{
+	background-color:rgba(0,0,0,0.05);
+	text-shadow: 1px 1px 1px white;
+}
+
+.btn:active{
+	background-color:rgba(0,0,0,0.35);
+	color:white;
+	text-shadow: 1px 1px 1px black;
+}
+
+.card__btn-show{
+	margin-bottom: 10px;
 }
 
 .card__control-wrapper{
@@ -84,21 +123,22 @@ body{
 .card__link{
 	float: right;
 	margin-right: 30px;
-	font-size: 0.7em;
+	font-size: 0.7rem;
 }
 
 .code{
+	display: block;
 	margin:0;
 	padding:10px;
 	background-color: #f8f8f8;
-	font-size: 0.7em;
+	font-size: 0.7rem;
 	text-align: left;
 	overflow-x: auto;
 	outline:1px solid yellow;
 }
 
 .card__title{
-	font-size: 1em;
+	font-size: 1rem;
 	text-align: center;
 }
 
@@ -128,13 +168,23 @@ body{
 		margin-top: 50px;
 		font-size: 64px;
 	}
-.card__inner{
+
+	.page-header__logo{
+		display:inline-block;
+		vertical-align: top;
+	}
+
+	.card__inner{
 		margin-left: 30px;
 		margin-right: 30px;
 	}
 }
 
 @media (min-width:1024px) {
+	html{
+		font-size: 24px;
+	}
+
 	.card {
 		margin: 10px auto;
 	}

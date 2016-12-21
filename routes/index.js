@@ -6,12 +6,23 @@ var path = require("path");
 var card_list = [];
 var questionNumber = 0;
 
+function replacer(str){
+	switch(str){
+		// case '\n': return '&\#010;';
+		default: return str;
+	}
+}
+
 fs.readFile('data/cards.json',function(err, data){
   if(err)
     throw err;
+
   var cards = JSON.parse(data);
   for(var item in cards){
 		card_list[card_list.length] = cards[item];
+
+		card_list[card_list.length-1].question.code = card_list[card_list.length-1].question.code.replace(/\n/g,replacer);
+		card_list[card_list.length-1].answer.code = card_list[card_list.length-1].answer.code.replace(/\n/g,replacer);
   }
   // console.log(card_list[0]);
 })

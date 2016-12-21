@@ -1,9 +1,9 @@
 {
   "card1":{
     "question":{
-      "title":"Вопрос1",
+      "title":"Вопрос",
       "text":"Синтаксис для вставки кодировки",
-      "code":"<meta charset='имя кодировки'> ASDLFSDDKFLSLFDKS:ALFKAS D:LKFD L:SAKDF: LK"
+      "code":""
     },
     "answer":{
       "title":"Ответ",
@@ -13,26 +13,26 @@
   },
   "card2":{
     "question":{
-      "title":"Вопрос2",
-      "text":"Синтаксис для вставки кодировки",
-      "code":"<meta charset='имя кодировки'> ASDLFSDDKFLSLFDKS:ALFKAS D:LKFD L:SAKDF: LK"
+      "title":"Вопрос",
+      "text":"Тег, который предназначен для отображения одной или нескольких строк текста, который представляет собой программный код.\n Не учитывает пробелов",
+      "code":""
     },
     "answer":{
       "title":"Ответ",
       "text":"Используется следующий синтаксис",
-      "code":"<meta charset='имя кодировки'>"
+      "code": "<code>\nfunction checkParent (src, dest) {<Br>\nwhile (src != null) {<Br>\nif (src.tagName == dest) return src<Br>\nsrc = src\nparentElement<Br>\n}<Br>\nreturn null<Br>\n}</code>"
     }
   },
   "card3":{
     "question":{
-      "title":"Вопрос3",
-      "text":"Синтаксис для вставки кодировки",
-      "code":"<meta charset='имя кодировки'> ASDLFSDDKFLSLFDKS:ALFKAS D:LKFD L:SAKDF: LK"
+      "title":"Вопрос",
+      "text":"Тег, который предназначен для отображения одной или нескольких строк текста, который представляет собой программный код.\n Учитывает пробелы!",
+      "code":""
     },
     "answer":{
       "title":"Ответ",
       "text":"Используется следующий синтаксис",
-      "code":"<meta charset='имя кодировки'>"
+      "code":"<pre>\n-                -----\n-----           |-----\n</pre>"
     }
   }
 }
